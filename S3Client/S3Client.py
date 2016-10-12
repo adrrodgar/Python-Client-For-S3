@@ -35,7 +35,7 @@ class S3Client():
 
             # close file
             data.close()
-            return "upload"
+            print("File: ", filename, " has been upload successfully")
         
-        except Exception:
-            return "error"
+        except Exception as e:
+            print(e)
